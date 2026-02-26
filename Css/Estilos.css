@@ -1,0 +1,158 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: 'Mokoto Demo';         /* Define el nombre de la fuente personalizada para su uso en el CSS */
+    src: url('../Fonts/Mokoto Demo.ttf') format('truetype');  /* Especifica la ubicación del archivo de fuente personalizada y su formato para que el navegador pueda cargarla correctamente */
+}
+
+/* Estilos generales para el cuerpo del documento */
+body{
+    font-family: 'Mokoto Demo', cursive;  /* Aplica la fuente personalizada a todo el cuerpo del documento */
+    background-color: #808080;          /* Establece un fondo gris para el cuerpo del documento */
+    color: #ffffff;                     /* Establece el color del texto en blanco para mejorar la legibilidad sobre el fondo gris */
+    letter-spacing: 2px;                  /* Agrega espacio entre las letras para mejorar la legibilidad y el diseño */
+
+}
+
+/* Estilos para el encabezado fijo */
+.header-fijo{
+    background-color: #000000;          /* Establece un fondo oscuro para el encabezado */
+    padding: 20px;                        /* Agrega espacio alrededor del contenido del encabezado */
+    position: sticky;                     /* Hace que el encabezado sea fijo */
+    top: 0;                               /* Posición del encabezado en la parte superior */
+    z-index: 1000;                        /* Asegura que el encabezado esté por encima de otros elementos */
+}
+
+/* Estilos para el contenedor principal */
+.contenedor{
+    width: 50%;               /* Establece un ancho fijo para el contenedor */
+    margin: 0 auto;           /* centra horizontal */
+    display: flex;            /* Establece un contenedor flexible para organizar el contenido */
+    flex-direction: column;   /* Organiza los elementos en una columna */
+    align-items: center;      /* centra imagen */
+    text-align: center;       /* centra texto */
+    margin-top: 20px;         /* Agrega un margen superior para separar el contenedor del encabezado */
+}
+
+/* Estilos para la sección del avatar */
+.avatar img{
+    width: 400px;
+    display: block;
+    margin: 0 auto;
+    height: 400px;                  /* Establece una altura automatica para la imagen del avatar */
+    border: 2px solid #000000;    /* Agrega un borde alrededor de la imagen del avatar */
+    border-radius: 50%;             /* Hace que la imagen del avatar sea circular */
+    /*object-fit: cover;            /* Asegura que la imagen se ajuste al contenedor sin distorsionarse */
+}
+
+/* Estilos para el título dentro de la sección del avatar */
+.avatar h2{
+    font-size: 30px;        /* Establece un tamaño de fuente grande para el título del avatar */
+   margin-bottom: 15px;     /* Agrega un margen inferior para separar el título del avatar de otros elementos */
+   margin-top: 20px;        /* Agrega un margen superior para separar el título del avatar de otros elementos */
+}
+
+/* Estilos para la sección de navegación */
+ul{
+    display: flex;  /* Establece un contenedor flexible para organizar los elementos de navegación */
+    gap: 35px;      /* Agrega un espacio entre los elementos de navegación para mejorar la legibilidad y el diseño */
+}
+
+/* Estilos para los enlaces dentro de la sección de navegación */
+.logos{
+    width: 25px;        /* Establece un ancho fijo para las imágenes de los enlaces de navegación */
+    height: 25px;       /* Establece una altura fija para las imágenes de los enlaces de navegación */
+    gap: 20px;          /* Agrega un espacio entre las imágenes de los enlaces de navegación para mejorar la legibilidad y el diseño */
+    margin-top: 20px;   /* Agrega un margen superior para separar los enlaces de navegación de otros elementos */
+}
+
+/* Estilos para los elementos de la lista dentro de la sección de navegación */
+li{
+    display: flex;          /* Establece un contenedor flexible para organizar los elementos de la lista */
+    list-style: none;       /* Elimina los puntos de la lista para un diseño más limpio */
+    align-items: center;    /* Centra verticalmente los elementos de la lista para mejorar la apariencia */
+}
+
+/* Estilos para la sección de presentación */
+.presentacion{
+    width: 500px;               /* Establece un ancho fijo para la sección de presentación */
+    height: 100%;               /* Establece una altura del 100% para la sección de presentación */
+    display: flex;              /* Establece un contenedor flexible para organizar el contenido de la sección de presentación */
+    flex-direction: column;     /* Organiza los elementos de la sección de presentación en una columna */
+    align-items: center;      
+    text-align: center;         /* centra texto */
+}
+
+/* Estilos para los párrafos dentro de la sección de presentación */
+.presentacion p{
+    margin: 10px 0;         /* Agrega un margen vertical para separar los párrafos dentro de la sección de presentación */
+    padding-top: 10px;      /* Agrega un padding superior para separar el texto del párrafo de otros elementos */
+    padding-bottom: 10px;   /* Agrega un padding inferior para separar el texto del párrafo de otros elementos */
+    line-height: 1.5;       /* Establece una altura de línea para mejorar la legibilidad del texto dentro de los párrafos de la sección de presentación */
+    text-align: justify;    /* Justifica el texto dentro de los párrafos para mejorar la apariencia y la legibilidad */
+
+}
+
+/* Estilos para la sección de artículos */
+article{
+    border: 2px solid #ffffff;    /* Agrega un borde alrededor de la sección de artículos para mejorar la apariencia y separar visualmente esta sección de otras partes del diseño */
+    border-radius: 12px;            /* Agrega bordes redondeados a la sección de artículos para mejorar la apariencia y darle un aspecto más suave */
+    display: flex;                  /* Establece un contenedor flexible para organizar el contenido de la sección de artículos */
+    flex-direction: column;         /* Organiza los elementos de la sección de artículos en una columna para mejorar la legibilidad y la apariencia */
+    background-color: #000000;    /* Establece un fondo oscuro para la sección de artículos para mejorar el contraste con el texto y otros elementos dentro de esta sección */
+    width: 500px;                   /* Establece un ancho fijo para la sección de artículos para mejorar la apariencia y la legibilidad */
+    height: 100PX;                  /* Establece una altura del 100% para la sección de artículos para mejorar la apariencia y la legibilidad */
+    margin-bottom: 20px;            /* Agrega un margen inferior para separar la sección de artículos de otros elementos en el diseño y mejorar la apariencia general */
+}
+
+/* Estilos para los encabezados dentro de la sección de artículos */
+.articulos button{
+    display: flex;                          /* Establece un contenedor flexible para organizar el contenido de los botones dentro de la sección de artículos */
+    align-items: center;                    /* Centra verticalmente el contenido de los botones dentro de la sección de artículos para mejorar la apariencia y la legibilidad */
+    justify-content: center;                /* Centra horizontalmente el contenido de los botones dentro de la sección de artículos para mejorar la apariencia y la legibilidad */
+    font-family: 'Mokoto Demo', cursive;    /* Aplica la fuente personalizada a los botones dentro de la sección de artículos para mantener la coherencia en el diseño y mejorar la apariencia */
+    background-color: #808080;            /* Establece un fondo gris para los botones dentro de la sección de artículos para mejorar el contraste con el texto y otros elementos dentro de esta sección */
+    color: #ffffff;                       /* Establece el color del texto en blanco para los botones dentro de la sección de artículos para mejorar la legibilidad sobre el fondo gris */
+    letter-spacing: 2px;                     /* Agrega espacio entre las letras para mejorar la legibilidad y el diseño de los botones dentro de la sección de artículos */
+    border-radius: 12px;                    /* Agrega bordes redondeados a los botones dentro de la sección de artículos para mejorar la apariencia y darle un aspecto más suave */
+    border: 2px solid #ffffff;            /* Agrega un borde alrededor de los botones dentro de la sección de artículos para mejorar la apariencia y separar visualmente estos botones de otros elementos dentro de esta sección */
+    width: 90%;                             /* Establece un ancho del 90% para los botones dentro de la sección de artículos para mejorar la apariencia y la legibilidad */
+    height: 60%;                            /* Establece una altura del 60% para los botones dentro de la sección de artículos para mejorar la apariencia y la legibilidad */
+    margin: auto;                           /* Centra los botones dentro de la sección de artículos para mejorar la apariencia y la legibilidad */
+    text-align: center;                     /* Centra el texto dentro de los botones para mejorar la apariencia y la legibilidad */
+}   
+
+/* Estilos para el estado hover de los botones dentro de la sección de artículos */
+.articulos button:hover{
+    background-color: #ffffff;      /* Cambia el fondo a blanco cuando el usuario pasa el cursor sobre los botones dentro de la sección de artículos para mejorar la interactividad y la apariencia */     
+    color: #000000;                 /* Cambia el color del texto a negro cuando el usuario pasa el cursor sobre los botones dentro de la sección de artículos para mejorar la legibilidad sobre el fondo blanco */
+    cursor: pointer;                  /* Cambia el cursor a una mano puntera cuando el usuario pasa el cursor sobre los botones dentro de la sección de artículos para mejorar la interactividad */
+}
+
+/* Estilos para las imágenes dentro de los botones de la sección de artículos */
+button img{
+    margin: 10px;       /* Agrega un margen de 10 píxeles alrededor de las imágenes dentro de los botones para mejorar el espacio entre las imágenes y los bordes del botón */
+    padding: auto;      /**/
+    display: flex;      /**/
+    width: 25px;        /**/
+    height: 25px;       /**/
+}
+
+footer{
+    background-color: #000000;
+    color: #ffffff;
+    min-height: 150px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer p{
+    text-align: center;
+    font-size: large;
+}
+

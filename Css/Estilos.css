@@ -11,7 +11,7 @@
 /* Estilos generales para el cuerpo del documento */
 body{
     font-family: 'Mokoto Demo', cursive;  /* Aplica la fuente personalizada a todo el cuerpo del documento */
-    background-color: #808080;          /* Establece un fondo gris para el cuerpo del documento */
+    background-color: #111827;          /* Establece un fondo gris para el cuerpo del documento */
     color: #ffffff;                     /* Establece el color del texto en blanco para mejorar la legibilidad sobre el fondo gris */
     letter-spacing: 2px;                  /* Agrega espacio entre las letras para mejorar la legibilidad y el diseño */
 
@@ -19,13 +19,42 @@ body{
 
 /* Estilos para el encabezado fijo */
 .header-fijo{
-    background-color: #000000;          /* Establece un fondo oscuro para el encabezado */
+    background-color: #070a1a;          /* Establece un fondo oscuro para el encabezado */
     padding: 20px;                        /* Agrega espacio alrededor del contenido del encabezado */
     position: sticky;                     /* Hace que el encabezado sea fijo */
     top: 0;                               /* Posición del encabezado en la parte superior */
     z-index: 1000;                        /* Asegura que el encabezado esté por encima de otros elementos */
 }
 
+.header-fijo h1 {
+    letter-spacing: 4px;
+    color: #ffffff;
+
+    /* Borde azul rey */
+    -webkit-text-stroke: 1px #1e3aff;
+
+    text-shadow:
+        /* Profundidad 3D (azul oscuro) */
+        1px 1px 0 #0a0f4f,
+        2px 2px 0 #0a0f4f,
+        3px 3px 0 #0a0f4f,
+        4px 4px 0 #0a0f4f,
+        5px 5px 0 #0a0f4f,
+        6px 6px 0 #0a0f4f,
+
+        /* Glow neón azul rey */
+        0 0 8px #1e3aff,
+        0 0 20px #1e3aff,
+        0 0 40px #1e3aff,
+        0 0 80px #1e3aff,
+
+        /* Estela lateral */
+        10px 0 20px rgba(30, 58, 255, 0.7),
+        18px 0 35px rgba(30, 58, 255, 0.4);
+
+    transform: perspective(600px) rotateX(12deg);
+
+}
 /* Estilos para el contenedor principal */
 .contenedor{
     width: 50%;               /* Establece un ancho fijo para el contenedor */
@@ -39,10 +68,10 @@ body{
 
 /* Estilos para la sección del avatar */
 .avatar img{
-    width: 400px;
+    width: 250px;
     display: block;
     margin: 0 auto;
-    height: 400px;                  /* Establece una altura automatica para la imagen del avatar */
+    height: 250px;                  /* Establece una altura automatica para la imagen del avatar */
     border: 2px solid #000000;    /* Agrega un borde alrededor de la imagen del avatar */
     border-radius: 50%;             /* Hace que la imagen del avatar sea circular */
     /*object-fit: cover;            /* Asegura que la imagen se ajuste al contenedor sin distorsionarse */
@@ -96,6 +125,13 @@ li{
 
 }
 
+hr{
+    background-color: #ffffff;
+    width: 500px;
+    height: 2px;
+    margin-bottom: 20px;
+}
+
 /* Estilos para la sección de artículos */
 article{
     border: 2px solid #ffffff;    /* Agrega un borde alrededor de la sección de artículos para mejorar la apariencia y separar visualmente esta sección de otras partes del diseño */
@@ -105,7 +141,7 @@ article{
     background-color: #000000;    /* Establece un fondo oscuro para la sección de artículos para mejorar el contraste con el texto y otros elementos dentro de esta sección */
     width: 500px;                   /* Establece un ancho fijo para la sección de artículos para mejorar la apariencia y la legibilidad */
     height: 100PX;                  /* Establece una altura del 100% para la sección de artículos para mejorar la apariencia y la legibilidad */
-    margin-bottom: 20px;            /* Agrega un margen inferior para separar la sección de artículos de otros elementos en el diseño y mejorar la apariencia general */
+    margin-top: 20px;            /* Agrega un margen inferior para separar la sección de artículos de otros elementos en el diseño y mejorar la apariencia general */
 }
 
 /* Estilos para los encabezados dentro de la sección de artículos */
@@ -114,7 +150,7 @@ article{
     align-items: center;                    /* Centra verticalmente el contenido de los botones dentro de la sección de artículos para mejorar la apariencia y la legibilidad */
     justify-content: center;                /* Centra horizontalmente el contenido de los botones dentro de la sección de artículos para mejorar la apariencia y la legibilidad */
     font-family: 'Mokoto Demo', cursive;    /* Aplica la fuente personalizada a los botones dentro de la sección de artículos para mantener la coherencia en el diseño y mejorar la apariencia */
-    background-color: #808080;            /* Establece un fondo gris para los botones dentro de la sección de artículos para mejorar el contraste con el texto y otros elementos dentro de esta sección */
+    background-color: #1e3aff;            /* Establece un fondo gris para los botones dentro de la sección de artículos para mejorar el contraste con el texto y otros elementos dentro de esta sección */
     color: #ffffff;                       /* Establece el color del texto en blanco para los botones dentro de la sección de artículos para mejorar la legibilidad sobre el fondo gris */
     letter-spacing: 2px;                     /* Agrega espacio entre las letras para mejorar la legibilidad y el diseño de los botones dentro de la sección de artículos */
     border-radius: 12px;                    /* Agrega bordes redondeados a los botones dentro de la sección de artículos para mejorar la apariencia y darle un aspecto más suave */
@@ -123,13 +159,17 @@ article{
     height: 60%;                            /* Establece una altura del 60% para los botones dentro de la sección de artículos para mejorar la apariencia y la legibilidad */
     margin: auto;                           /* Centra los botones dentro de la sección de artículos para mejorar la apariencia y la legibilidad */
     text-align: center;                     /* Centra el texto dentro de los botones para mejorar la apariencia y la legibilidad */
+    box-shadow: 4px 2px 25px #1e3aff;
+
 }   
 
 /* Estilos para el estado hover de los botones dentro de la sección de artículos */
 .articulos button:hover{
-    background-color: #ffffff;      /* Cambia el fondo a blanco cuando el usuario pasa el cursor sobre los botones dentro de la sección de artículos para mejorar la interactividad y la apariencia */     
+    background-color: #3c5bff;      /* Cambia el fondo a blanco cuando el usuario pasa el cursor sobre los botones dentro de la sección de artículos para mejorar la interactividad y la apariencia */     
     color: #000000;                 /* Cambia el color del texto a negro cuando el usuario pasa el cursor sobre los botones dentro de la sección de artículos para mejorar la legibilidad sobre el fondo blanco */
     cursor: pointer;                  /* Cambia el cursor a una mano puntera cuando el usuario pasa el cursor sobre los botones dentro de la sección de artículos para mejorar la interactividad */
+    box-shadow: 4px 4px 25px #ffffff;
+
 }
 
 /* Estilos para las imágenes dentro de los botones de la sección de artículos */
@@ -145,6 +185,7 @@ footer{
     background-color: #000000;
     color: #ffffff;
     min-height: 150px;
+    margin-top: 20px;
     padding: 20px;
     display: flex;
     flex-direction: column;
